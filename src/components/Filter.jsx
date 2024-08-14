@@ -2,31 +2,27 @@
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import OurWork from '../assets/OurWork.svg';
 
-
-
 const cards = [
-  { src: '/p4.png', category: 'Graphic', linksrc: '../app/FOUNDATION/page' },
-  { src: '/p5.png', category: 'Character', linksrc: '../app/Beary/page' },
-  { src: '/p6.png', category: 'UX/UI', linksrc: '../app/1D/page' },
-  { src: '/p7.png', category: 'UX/UI', linksrc: '../app/StudentCard/page' },
-  { src: '/p8.png', category: 'UX/UI', linksrc: '../app/Time_Attendance/page' },
-  { src: '/p9.png', category: 'UX/UI', linksrc: '../app/Okontek/page' },
-  { src: '/p10.png', category: 'Character', linksrc: '../app/Chujai/page' },
-  { src: '/p2.png', category: 'Graphic', linksrc: '../app/Encyclopedia/page' },
-  { src: '/p3.png', category: 'Graphic', linksrc: '../app/Rebrand_Siam_Wellness/page' },
-  { src: '/p1.png', category: 'Product', linksrc: '../app/BOZ/page' },
-  { src: '/p12.png', category: 'Product', linksrc: '../app/Alamus/page' },
-  // { src: '/gifx1.gif', category: 'None', linksrc: '../app/Alamus/page' },
+  { src: '/p4.png', category: 'Graphic', linksrc: '/FOUNDATION' },
+  { src: '/p5.png', category: 'Character', linksrc: '/Beary' },
+  { src: '/p6.png', category: 'UX/UI', linksrc: '/1D' },
+  { src: '/p7.png', category: 'UX/UI', linksrc: '/StudentCard' },
+  { src: '/p8.png', category: 'UX/UI', linksrc: '/Time_Attendance' },
+  { src: '/p9.png', category: 'UX/UI', linksrc: '/Okontek' },
+  { src: '/p10.png', category: 'Character', linksrc: '/Chujai' },
+  { src: '/p2.png', category: 'Graphic', linksrc: '/Encyclopedia' },
+  { src: '/p3.png', category: 'Graphic', linksrc: '/Rebrand_Siam_Wellness' },
+  { src: '/p1.png', category: 'Product', linksrc: '/BOZ' },
+  { src: '/p12.png', category: 'Product', linksrc: '/Alamus' },
 ];
 
 const OurWorkPage = () => {
   const [activeFilter, setActiveFilter] = useState('All');
-  
+
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -39,11 +35,11 @@ const OurWorkPage = () => {
     : cards.filter(card => card.category === activeFilter);
 
   return (
-    <div className='w-screen'>
+    <div className='w-screen h-full'>
       <div className="flex justify-center bg-[#AFACAA]">
         <Image src={OurWork} alt="Our Work" />
       </div>
-      <div className="max-w-7xl m-auto h-full sm:px-8 px-16">
+      <div className="max-w-7xl m-auto sm:px-8 px-16">
         <ul className="mt-6 flex flex-wrap gap-y-2 gap-x-2">
           {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
             <li key={category}>
@@ -57,11 +53,10 @@ const OurWorkPage = () => {
         <div className="flex justify-between items-center flex-wrap pb-20">
           {filteredCards.map((card, index) => (
             <div key={index} className="mx-auto mt-10 relative">
-              <div className="overflow-hidden rounded-md ">
+              <div className="overflow-hidden rounded-md">
                 <Link href={card.linksrc}>
-                  <Image 
+                  <Image
                     data-aos="fade-up"
-     data-aos-anchor-placement="center-center"
                     className="transition-transform duration-300 transform hover:scale-110"
                     src={card.src}
                     width={350}
@@ -73,6 +68,7 @@ const OurWorkPage = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
