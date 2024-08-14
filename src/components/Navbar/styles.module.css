@@ -1,0 +1,53 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 30;
+    padding: 1.5rem; 
+}
+
+.navbar_container {
+    width: 100%;
+    max-width: 1024px; 
+}
+
+
+
+.navbar_items {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_item {
+    margin-right:6rem;
+}
+
+.navbar_item:last-child {
+    margin-right: 0;
+}
+.navbar_item {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 6rem;
+    opacity: 0; 
+    animation: slideIn 1s ease forwards;
+    animation-delay: 7.5s; 
+}
+.navbar_item:hover {
+    color: #FFF7F6;
+    transition: .3s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
