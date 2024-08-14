@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image';
 import Navbar from '@/components/Navbar/index'
 import Schooney from './img/Schooney.png';
-import Schooney1 from './img/schooney1.png';
-import Schooney2 from './img/schooney2.png';
-import Schooney3 from './img/schooney3.png';
-import Schooney4 from './img/schooney4.png';
+import Schooney1 from './img/Schooney1.png';
+import Schooney2 from './img/Schooney2.png';
+import Schooney3 from './img/Schooney3.png';
+import Schooney4 from './img/Schooney4.png';
 import SchooneyPro1 from './img/SchooneyPro1.png';
 import PolygonBlur2 from '@/assets/PolygonBlur2.svg';
 import PolygonBlur3 from '@/assets/PolygonBlur3.svg';
