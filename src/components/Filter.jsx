@@ -35,7 +35,7 @@ const OurWorkPage = () => {
     : cards.filter(card => card.category === activeFilter);
 
   return (
-    <div className='w-screen h-full'>
+    <div className='w-full h-full'>
       <div className="flex justify-center bg-[#AFACAA]">
         <Image src={OurWork} alt="Our Work" />
       </div>

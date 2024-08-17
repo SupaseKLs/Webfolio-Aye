@@ -47,13 +47,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:mt-40 flex xl-min:mt-6 max-w-5xl mt-20 m-auto h-screen">
+        <div className="sm:mt-40 xl-min:mt-20 flex max-w-5xl mt-20 m-auto h-screen">
           <div className="relative text-content-color">
-            <p className="xl:hidden absolute left-8 top-[-25px] text-3xl">2024</p>
-            <Image className="xl:ml-30 min xl-min:h-96 sm:hidden relative" src={Line} />
+            <p className="xl:hidden absolute left-8 top-[-25px] xl-min:text-xl text-3xl">2024</p>
+            <Image className="xl-min:h-80 xl:ml-40 xl:hidden relative" src={Line} />
           </div>
           <div className="text-content-color">
-            <Image className="xl:pt-64 xl-min:pt-20 sm:w-30 pt-44 pl-8" src={Portfolio} />
+            <Image className="xl:pt-60 xl-min:pt-24 sm:w-72 xl-min:w-80 pt-44 pl-8" src={Portfolio} />
             <div className="sm:mt-0 flex flex-col mt-10">
               <p className="sm:w-9 sm:h-9 sm:text-sm sm:ml-56 uppercase ml-80 w-12 h-12 flex justify-center items-center bg-content-color rounded-full text-primary-color">Aye</p>
               <p className="sm:text-xl pl-8 text-3xl">Chanikarn Laobudsa</p>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <Image
-          className="w-fit h-full absolute top-0 right-0 z-10"
+          className="sm:w-[250px] h-screen w-fit absolute top-0 right-0 z-10"
           width={326}
           src={Mascot}
           alt="Mascot"
