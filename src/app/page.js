@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
+        <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-full">
           <div className="relative text-content-color">
             <p className="xl:hidden absolute left-8 top-[-25px] xl-min:text-xl text-3xl">2024</p>
             <Image className="xl-min:max-h-80 xl:ml-40 xl:hidden relative" src={Line} />

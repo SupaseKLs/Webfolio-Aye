@@ -18,7 +18,6 @@ function ImageSlider() {
   ];
 
   const [wordData, setWordData] = useState(imgs[0]);
-  const [wordData2, setWordData2] = useState(imgs2[0]);
   const [val, setVal] = useState(0);
 
   const handleClick = (index) => {
@@ -37,6 +36,7 @@ function ImageSlider() {
     setVal(index);
     setWordData(imgs[index]);
   };
+  
 
   return (
     <div>
@@ -72,11 +72,10 @@ function ImageSlider() {
                 autoPlay
               >
                 <source src={data.value} type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
             ) : (
-              <img
-                className={wordData2.id === i ? "clicked" : ""}
+              <Image
+                className={wordData.id === i ? "clicked" : ""}
                 src={data.value}
                 height="70"
                 width="100"
