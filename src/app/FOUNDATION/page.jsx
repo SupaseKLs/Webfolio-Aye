@@ -41,7 +41,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className='sm:px-1 sm:ml-0 xl:ml-40 ml-10 xl:mt-4'>
+                    <div className='sm:px-1 xl:m-auto xl:px-4 ml-10 xl:mt-4'>
                         <h1 className='sm:text-2xl text-primary-color text-5xl'>LOVE FOUNDATION</h1>
                         <p className='sm:text-xl sm:mt-2 text-3xl mt-6'>Graphic design</p>
                         <p className='text-primary-color mt-6'>“Acknowledge the status of your own for other and your own safety”</p>

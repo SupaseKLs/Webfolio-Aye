@@ -6,7 +6,7 @@ import PolygonBlur2 from '@/assets/PolygonBlur2.svg';
 import PolygonBlur3 from '@/assets/PolygonBlur3.svg';
 const page = () => {
     return (
-        <div className='sm:h-full relative h-screen'>
+        <div className='sm:h-full relative h-full 3xl:h-screen'>
             <Image className='absolute top-0 right-0' src={PolygonBlur2} />
             <Image className='absolute bottom-0 left-0' src={PolygonBlur3} />
             <div className='max-w-7xl m-auto'>

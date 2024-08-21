@@ -21,7 +21,7 @@ const page = () => {
 
                     </div>
 
-                    <div className='sm:px-1 sm:ml-0 xl:ml-40 ml-10 xl:mt-4'>
+                    <div className='sm:px-1 sm:ml-0 xl:m-auto xl:px-4 ml-10 xl:mt-4'>
                         <div className='flex xl:flex-col-reverse justify-center'>
                             <div className='py-20'>
                                 <div>

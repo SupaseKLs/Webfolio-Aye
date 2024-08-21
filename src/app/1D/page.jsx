@@ -12,6 +12,7 @@ import SketchWireFrame from './img/SketchWireFrame.png'
 import WireFrame from './img/WireFrame.png'
 import Logo from './svg/Logo.svg'
 import Palette from './svg/Palette.svg'
+import Counter from './svg/counter.svg'
 import categories from './svg/categories.svg';
 import UI from './svg/UI.svg';
 import PolygonBlur2 from '@/assets/PolygonBlur2.svg';
@@ -28,9 +29,9 @@ const page = () => {
                     <Navbar />
                 </div>
 
-                <div className="xl:flex-col flex sm:p-5 xl:justify-center mt-20 pb-10">
+                <div className="xl:flex-col flex sm:p-5 xl-min:justify-center xl:justify-center mt-20 pb-10">
                     <div>
-                        <Image src={bg_telephone} />
+                        <Image className='w-9/12 h-full' src={bg_telephone} />
 
                     </div>
 
@@ -40,8 +41,8 @@ const page = () => {
             <div>
                 <Image src={Banner} className='w-screen' />
             </div>
-            <div className='max-w-7xl m-auto'>
-                <div className='xl:px-4'>
+            <div className='xl-min:max-w-5xl max-w-7xl m-auto'>
+                <div className='xl:px-4 xl-min:m-auto'>
                     <h1 className='text-primary-color text-3xl py-6'>Project Overview</h1>
                     <p className='text-primary-color'>University project: <span className='text-black'> 1D Application : My first ever project on UX/UI</span></p>
                     <p className='text-primary-color'>Proposition: <span className='text-black'>Application for students In university, thinking of something that is not about education. Something apart from<br />learning is entertainment and relaxation.</span></p>
@@ -49,8 +50,9 @@ const page = () => {
                     <p className='text-primary-color'>Participation: work with: Mrs. Anchisa Amornthanapat</p>
                     <p className='pt-10 pb-20'>Any events that host in the university each month will be advertised by the host themself or PR and then spread the word<br /> through the community. Sometimes the event may already started and it is become to late to join or participate due to only few<br /> advertisement. So I proposed 1D application to keep on track on each events through smartphones.</p>
                 </div>
-                <div className='xl:px-4'>
+                <div className='sm:px-4 xl:px-4'>
                     <h2 className='text-primary-color'>Follow the universities events through: Poll from interview 54 people </h2>
+                    <Image src={Counter} className='my-12' />
                     <div>
                         <p>I made an interview for correcting the information and make it swift for whoever got interviewed. For the question part, we<br /> asked where the universities students got the info of the events. In summary most of the students got the information from<br /> having conversation or pass along the info from conversation.</p>
                         <p className='pt-8'>From the summary that got, I thinking of second interview which ask the info about how the university provide/spread and<br /> differentiation of the info. I made an interview with 2<br /> people, host of the events and the participant. This will conclude into 2 personas.</p>
@@ -64,8 +66,8 @@ const page = () => {
             <div className='bg-custom-gradient py-16 text-white'>
                 <div className='max-w-7xl m-auto'>
                     <h1 className='text-center text-3xl font-bold text-white pb-10'>User requirement</h1>
-                    <div className='sm:flex-col flex justify-center'>
-                        <div className='sm:pl-6'>
+                    <div className='xl:flex-col flex justify-center'>
+                        <div className='xl:m-auto'>
                             <h1 className='text-red-color text-2xl'>User 1: <span className='text-white'>Participants</span></h1>
                             <ul className='pt-12'>
                                 <li> • Diary events check list</li>
@@ -76,7 +78,7 @@ const page = () => {
                                 <li> • Free/Paid events are categorized</li>
                             </ul>
                         </div>
-                        <div className='sm:pl-6 sm:pt-8 pl-12'>
+                        <div className='xl:pt-10 xl:m-auto sm:pt-8 pl-12'>
                             <h1 className='text-yellow-colors text-2xl'>User 2: <span className='text-white'>Host of the events</span></h1>
                             <ul className='pt-12'>
                                 <li> • Take only few minutes to fill the information</li>

@@ -16,7 +16,7 @@ const page = () => {
 
                 <div className="xl:flex-col flex sm:p-5 xl:justify-center mt-20 pb-10">
 
-                    <div className='sm:px-1 sm:ml-0 xl:ml-40 ml-10 xl:mt-4'>
+                    <div className='sm:px-1 sm:ml-0 xl:m-auto xl:px-4 ml-10 xl:mt-4'>
                         <div className='xl:flex-col flex'>
 
                             <video className='sm:w-96' width="760" height="240" muted autoPlay loop>

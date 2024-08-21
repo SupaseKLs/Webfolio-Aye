@@ -47,16 +47,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:mt-40 xl-min:mt-20 flex max-w-5xl mt-20 m-auto h-screen">
+        <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
           <div className="relative text-content-color">
             <p className="xl:hidden absolute left-8 top-[-25px] xl-min:text-xl text-3xl">2024</p>
-            <Image className="xl-min:h-80 xl:ml-40 xl:hidden relative" src={Line} />
+            <Image className="xl-min:max-h-80 xl:ml-40 xl:hidden relative" src={Line} />
           </div>
           <div className="text-content-color">
-            <Image className="xl:pt-60 xl-min:pt-24 sm:w-72 xl-min:w-80 pt-44 pl-8" src={Portfolio} />
-            <div className="sm:mt-0 flex flex-col mt-10">
+            <Image className="xl:pt-72 xl-min:pt-24 xl-min:max-w-96 sm:w-72 xl:w-96 pt-44 pl-8" src={Portfolio} />
+            <div className="sm:mt-0 flex flex-col mt-6">
               <p className="sm:w-9 sm:h-9 sm:text-sm sm:ml-56 uppercase ml-80 w-12 h-12 flex justify-center items-center bg-content-color rounded-full text-primary-color">Aye</p>
-              <p className="sm:text-xl pl-8 text-3xl">Chanikarn Laobudsa</p>
+              <p className="sm:text-xl xl-min:text-xl pl-8 text-3xl">Chanikarn Laobudsa</p>
             </div>
           </div>
           <Image
@@ -74,9 +74,9 @@ export default function Home() {
       </div>
 
       {/* about */}
-      <div className="relative xl:pt-8 sm:h-full flex h-screen justify-center items-center px-4">
+      <div className="relative xl:pt-8 sm:h-full flex h-full justify-center items-center px-4 py-20">
         <Image className="absolute top-0 right-0" src={PolygonBlur2} />
-        <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
+        {/* <Image className="absolute bottom-0 left-0" src={PolygonBlur3} /> */}
         <div className="xl:flex-col md-min:flex-row 2xl:flex-row flex xl:items-center max-w-5xl m-auto">
 
           <Image className="xl:hidden pt-8" src={Line2} />
