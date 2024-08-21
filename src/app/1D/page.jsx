@@ -67,7 +67,7 @@ const page = () => {
                 <div className='max-w-7xl m-auto'>
                     <h1 className='text-center text-3xl font-bold text-white pb-10'>User requirement</h1>
                     <div className='xl:flex-col flex justify-center'>
-                        <div className='xl:m-auto'>
+                        <div className='xl:m-auto pl-12'>
                             <h1 className='text-red-color text-2xl'>User 1: <span className='text-white'>Participants</span></h1>
                             <ul className='pt-12'>
                                 <li> • Diary events check list</li>
