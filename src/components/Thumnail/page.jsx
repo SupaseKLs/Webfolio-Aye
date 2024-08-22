@@ -39,7 +39,7 @@ function ImageSlider() {
   
 
   return (
-    <div>
+    <div className='m-auto'>
       {/* <button className='btns' onClick={handlePrevious}>Previous</button> */}
       
       {wordData.type === 'video' ? (
@@ -58,7 +58,7 @@ function ImageSlider() {
       
       {/* <button className='btns' onClick={handleNext}>Next</button> */}
       
-      <div className='w-9/12 m-auto flex justify-between'>
+      <div className='w-9/12 flex justify-between'>
         {imgs.map((data, i) => (
           <div className="thumbnail" key={i} onClick={() => handleClick(i)}>
             {data.type === 'video' ? (

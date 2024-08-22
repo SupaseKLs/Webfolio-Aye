@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <Image
-          className="sm:w-[250px] h-screen w-fit absolute top-0 right-0 z-10"
+          className="sm:w-[250px] h-fit w-fit absolute top-0 right-0 z-10"
           width={326}
           src={Mascot}
           alt="Mascot"
