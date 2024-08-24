@@ -19,7 +19,7 @@ const page = () => {
                 </div>
 
                 <div className="xl:flex-col flex sm:p-5 xl:justify-center mt-20 pb-10">
-                    <div className='flex flex-col xl:items-center'>
+                    <div className='xl:w-fit m-auto px-2 w-screen flex flex-col xl:items-center'>
                         <div>
                             <Image src={img1} />
                         </div>
@@ -41,34 +41,33 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className='sm:px-1 xl:m-auto xl:px-4 ml-10 xl:mt-4'>
-                        <h1 className='sm:text-2xl text-primary-color text-5xl'>LOVE FOUNDATION</h1>
-                        <p className='sm:text-xl sm:mt-2 text-3xl mt-6'>Graphic design</p>
-                        <p className='text-primary-color mt-6'>“Acknowledge the status of your own for other and your own safety”</p>
-                        <p className='sm:text-sm sm:mt-2 mt-6'>This infographics will provide the information about HIV. This info will<br /> included history, symptoms and how to protect yourself from HIV.<br />
-                            Other information are included how you can coexistence with the person<br /> who infected with the HIV and how to have a safe sexual intercourse with<br /> right protection that will prevent future contagious disease.<br />
-                            Hopefully, this infographic will reduce the negative perspective of HIV and<br /> be aware about the sexual protection and understand about the sexual <br />hygiene. This will change the perspective of how you live with HIV infectors.</p>
-                        <p className='my-6'>· General Based Information Graphic  and Timeline for Facebook posts.</p>
-                        <h1 className='font-bold'>Mood & Tone</h1>
-                        <p className='mt-2'>
-                            - Color theme of LGBT+ which represent the diversity
-                        </p>
-                        <p className='mt-2'>
-                            - All logo and graphic are drew by myself by Adobe Illustrator
-                        </p>
-                        <p className='mt-2'>
-                            - Rearrange all the story and timeline to clarify the info
-                        </p>
-                        <p className='mt-2'>
-                            - Recreate logo
-                        </p>
-                        <div className='flex mt-6'>
+                    <div className='px-10'>
+                        <div className='py-6'>
+                            <h1 className='text-4xl text-primary-color'>LOVE FOUNDATION</h1>
+                            <h3 className='py-4 text-2xl'>Graphic design</h3>
+                            <p className='text-primary-color'>“Acknowledge the status of your own for other and your own safety”</p>
+                        </div>
+                        <div>
+                            <p>This infographics will provide the information about HIV. This info will included history, symptoms and how to protect yourself from HIV.
+                                Other information are included how you can coexistence with the person who infected with the HIV and how to have a safe sexual intercourse with right protection that will prevent future contagious disease.
+                                Hopefully, this infographic will reduce the negative perspective of HIV and be aware about the sexual protection and understand about the sexual hygiene. This will change the perspective of how you live with HIV infectors.</p>
+                        </div>
+                        <div className='py-4'>
+                            <p className='text-gray-color'>· General Based Information Graphic  and Timeline for Facebook posts.</p>
+                        </div>
+                        <div>
+                            <p className='font-bold'>Mood & Tone</p>
+                            <p>- Color theme of LGBT+ which represent the diversity<br />
+                                - All logo and graphic are drew by myself by Adobe Illustrator<br />
+                                - Rearrange all the story and timeline to clarify the info<br />
+                                - Recreate logo</p>
+                        </div>
+                        <div className='flex flex-wrap gap-2 mt-6'>
                             <p className='text-xs px-8 py-1 border-2 border-primary-color text-primary-color rounded-full'>Graphic design</p>
-                            <p className='text-xs px-8 py-1 ml-4 border-2 border-gray-color text-gray-color rounded-full'>Adobe illustrator</p>
-                            <p className='text-xs px-8 py-1 ml-4 border-2 border-gray-color text-gray-color rounded-full'>Adobe Photoshop</p>
+                            <p className='text-xs px-8 py-1 border-2 border-gray-color text-gray-color rounded-full'>Adobe Illustrator</p>
+                            <p className='text-xs px-8 py-1 border-2 border-gray-color text-gray-color rounded-full'>Sustainable product </p>
                         </div>
                         <hr className='my-6' />
-                        <p className='text-primary-color'>Date | 3 weeks</p>
                         <p className='text-primary-color'>Participation | 100%</p>
                     </div>
                 </div>

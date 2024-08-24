@@ -21,12 +21,12 @@ const page = () => {
                 <div className='max-w-7xl m-auto mt-20 px-4'>
                     <div className="flex xl:flex-col items-center">
                         <div>
-                            <Image src={Img} />
+                            <Image className='xl:max-w-full max-w-fit' src={Img} />
                         </div>
                         <div className='pb-10 pl-5'>
                             <h1 className='sm:text-2xl text-primary-color text-5xl'>Rebrand - Siam Wellness </h1>
                             <h3 className='sm:text-xl sm:mt-2 text-3xl mt-6'>Graphic design</h3>
-                            <p className='sm:text-sm sm:mt-2 mt-6'>Siam Wellness group is a hospitality commercial type specific on health spa.<br /> As company expanding the branch, they want to engage to all type of<br /> customers from high to low budget. This conclude the idea to recreate new<br /> logos and character branding. Logos represent hands that form around circle.<br /> Circle refer to all a(round) to represent this brand that they do everything on<br /> health spa and in the center will have SW which stand for Siam wellness<br /> brand. Overall aiming  for friendly feeling logos to attract more types of<br /> customers.
+                            <p className='sm:text-sm sm:mt-2 mt-6'>Siam Wellness group is a hospitality commercial type specific on health spa. As company expanding the branch, they want to engage to all type of customers from high to low budget. This conclude the idea to recreate new logos and character branding. Logos represent hands that form around circle. Circle refer to all a(round) to represent this brand that they do everything on health spa and in the center will have SW which stand for Siam wellness brand. Overall aiming  for friendly feeling logos to attract more types of customers.
                             </p>
                             <div className='flex mt-6'>
                             <p className='sm:text-xs px-8 py-1 border-2 border-primary-color text-primary-color rounded-full'>Graphic design</p>
