@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar/index'
-import bg_telephone from './img/img1.png'
+import bg_telephone from './img/telephone.png'
+import name_telephone from './img/namephone.png'
 import Banner from './img/Banner.png'
 import Persona from './img/Persona.png'
 import Empathy from './img/Empathy.png'
@@ -30,8 +31,9 @@ const page = () => {
                 </div>
 
                 <div className="xl:flex-col flex sm:p-5 xl-min:justify-center xl:justify-center mt-20 pb-10">
-                    <div>
-                        <Image className='w-9/12 h-full' src={bg_telephone} />
+                    <div className='xl-min:flex xl-min:items-center xl:flex xl:flex-col xl:items-center'>
+                        <Image className='w-fit xl:mb-10 max-h-60' src={name_telephone} />
+                        <Image className='w-fit h-full' src={bg_telephone} />
 
                     </div>
 

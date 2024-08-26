@@ -31,8 +31,8 @@ const OurWorkPage = () => {
 
     // GSAP scroll-triggered horizontal movement and color change
     gsap.to('.stop-slide', {
-      width: '100%',
-      height: '100%',
+      x: '100%', 
+      width: 'w-full',
       duration: 1,
       ease: 'power2.out'
     });
@@ -41,10 +41,10 @@ const OurWorkPage = () => {
     gsap.fromTo(
       '.slide-box',
       { 
-        x: '0%', 
+        x: '0', 
         backgroundColor: '#fff', 
-        width: '0',
-        height: '184px' // Starting height
+        width: '0%',
+        height: '100mvh' // Starting height
       },
       {
         x: '0%', 
@@ -92,7 +92,7 @@ const OurWorkPage = () => {
   return (
     <div className='w-full h-full'>
       <div className="flex stop-slide slide-box justify-center items-center overflow-hidden">
-        <Image className="object-cover w-full h-full" src={OurWork} alt="Our Work" />
+        <Image className="object-cover w-full h-fit" src={OurWork} alt="Our Work" />
       </div>
       <div className="max-w-7xl m-auto sm:px-8 px-16">
         <ul className="mt-6 flex flex-wrap gap-y-2 gap-x-2">
