@@ -9,7 +9,7 @@ const index = () => {
   return (
     <>
       {/* about */}
-      <div className="relative top-0 xl:pt-8 flex flex-col h-full justify-center items-center px-4">
+     <div className="pb-40 relative top-0 xl:pt-8 flex flex-col h-full justify-center items-center px-4">
         <div className="flex justify-center items-center pt-8">
           <Navbar />
         </div>

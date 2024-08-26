@@ -24,7 +24,7 @@ const page = () => {
                         <div>
                             <Image className='max-w-fit max-h-[700px]' src={Alamus} />
                         </div>
-                        <div className='px-10'>
+                        <div className='px-2'>
                             <div className='py-10'>
                                 <h1 className='text-primary-color text-3xl'>Alamus - All in a mussel</h1>
                                 <h3 className='text-xl pt-4'>Product design & Thesis</h3>
