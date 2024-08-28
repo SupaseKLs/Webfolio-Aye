@@ -65,7 +65,7 @@ export default function Home() {
        
 
         <Image
-          className="sm:w-[250px] h-fit w-fit absolute top-0 right-0 z-10"
+          className="sm:w-[250px] h-full w-fit absolute top-0 right-0 z-10"
           width={326}
           src={Mascot}
           alt="Mascot"
@@ -77,7 +77,7 @@ export default function Home() {
       {/* about */}
       <div className="relative xl:pt-8 sm:h-full flex h-full justify-center items-center px-4 py-20">
         <Image className="absolute top-0 right-0" src={PolygonBlur2} />
-        {/* <Image className="absolute bottom-0 left-0" src={PolygonBlur3} /> */}
+        <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
         <div className="xl:flex-col md-min:flex-row 2xl:flex-row flex xl:items-center max-w-5xl m-auto">
 
           <Image className="xl:hidden pt-8" src={Line2} />

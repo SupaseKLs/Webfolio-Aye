@@ -41,7 +41,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className='px-10'>
+                    <div>
                         <div className='py-6'>
                             <h1 className='text-4xl text-primary-color'>LOVE FOUNDATION</h1>
                             <h3 className='py-4 text-2xl'>Graphic design</h3>

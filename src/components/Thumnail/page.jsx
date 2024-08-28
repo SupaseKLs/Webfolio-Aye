@@ -50,7 +50,7 @@ function ImageSlider() {
         <Image src={wordData.value} height="200" width="500" alt={`Slide ${wordData.id}`} />
       )}
       
-      <div className='w-9/12 flex justify-between'>
+      <div className='w-9/12 flex m-auto justify-between'>
         {imgs2.map((data, i) => (
           <div className="thumbnail" key={i} onClick={() => handleThumbnailClick(i)}>
             {wordData.id === i ? (

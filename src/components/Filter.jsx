@@ -27,42 +27,37 @@ const OurWorkPage = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   useEffect(() => {
-    AOS.init(); // Initialize AOS if needed
+    AOS.init();
 
-    // GSAP scroll-triggered horizontal movement and color change
     gsap.to('.stop-slide', {
       x: '100%', 
-      width: 'w-full',
+      width: '100%',
       duration: 1,
       ease: 'power2.out'
     });
 
-    // Animate .slide-box with scroll
     gsap.fromTo(
       '.slide-box',
       { 
-        x: '0', 
+        x: '-50', 
         backgroundColor: '#fff', 
         width: '0%',
-        height: '100mvh' // Starting height
       },
       {
         x: '0%', 
         backgroundColor: '#AFACAA', 
         width: '100%',
-        height: '184px', // Ending height
         scrollTrigger: {
           trigger: '.slide-box',
           start: 'top 100%',
           end: 'bottom top',
           scrub: true,
         },
-        duration: 1, // Duration can be removed or set to 0 as it's scrubbing with scroll
+        duration: 1, 
       }
     ),
     
 
-    // GSAP scroll-triggered animations for other elements
     gsap.utils.toArray('.animate-on-scroll').forEach((element) => {
       gsap.fromTo(
         element,
@@ -91,11 +86,12 @@ const OurWorkPage = () => {
 
   return (
     <div className='w-full h-full'>
-      <div className="flex stop-slide slide-box justify-center items-center overflow-hidden">
-        <Image className="object-cover w-full h-fit" src={OurWork} alt="Our Work" />
+      <div className="flex relative justify-center items-center overflow-hidden">
+        <div className='sssssm:h-20 w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'></div>
+        <Image className="absolute top-0 object-cover w-full h-fit" src={OurWork} alt="Our Work" />
       </div>
-      <div className="max-w-7xl m-auto sm:px-8 px-16">
-        <ul className="mt-6 flex flex-wrap gap-y-2 gap-x-2">
+      <div className="w-full overflow-x-auto max-w-7xl m-auto sm:px-8 px-16">
+        <ul className="overflow-x-scroll mt-6 flex flex-wrap gap-y-2 gap-x-2">
           {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
             <li key={category}>
               <p
