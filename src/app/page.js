@@ -39,7 +39,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="bg-primary-color h-full">
+      <div className="bg-primary-color h-screen">
         <div className="relative max-w-7xl m-auto">
           <div className="flex justify-center pt-8">
             {/* Uncomment the Navbar if needed */}
@@ -58,9 +58,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
           <Image
             src={PolygonBlur} className="absolute bottom-0 left-0" />
-        </div>
 
        
 

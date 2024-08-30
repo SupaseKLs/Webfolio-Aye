@@ -88,7 +88,7 @@ const OurWorkPage = () => {
     <div className='w-full h-full'>
       <div className="flex  justify-around items-center overflow-hidden">
         <div className='relative sm:h-fit w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'>
-      <Image className="absolute top-0 w-full h-fit" src={OurWork} alt="Our Work" />
+      <Image className=" top-0 w-full h-fit" src={OurWork} alt="Our Work" />
 
         </div>
         
