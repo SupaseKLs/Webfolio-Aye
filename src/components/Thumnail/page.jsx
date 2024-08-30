@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -10,6 +10,7 @@ function ImageSlider() {
     { id: 3, value: "blue.mp4", type: "video" },
   ];
 
+  // This is the new set of images/videos used for thumbnails
   const imgs2 = [
     { id: 0, value: "/green.png" },
     { id: 1, value: "/purple.png" },
@@ -19,17 +20,17 @@ function ImageSlider() {
 
   const [wordData, setWordData] = useState(imgs[0]);
   const [val, setVal] = useState(0);
-  const [isThumbnail, setIsThumbnail] = useState(true);
+  const [isThumbnail, setIsThumbnail] = useState(true); // Track whether to show controls
 
   const handleClick = (index) => {
     setVal(index);
     setWordData(imgs[index]);
-    setIsThumbnail(false); 
+    setIsThumbnail(false); // Set to full-screen mode when a thumbnail is clicked
   };
 
   const handleThumbnailClick = (index) => {
     handleClick(index);
-    setIsThumbnail(true); 
+    setIsThumbnail(true); // Return to thumbnail mode when clicking a thumbnail
   };
 
   return (
@@ -39,8 +40,8 @@ function ImageSlider() {
           autoPlay
           loop
           muted
-          controls={!isThumbnail} 
-          style={{ width: '100%', height: 'auto' }}
+          controls={!isThumbnail} // Only show controls if not in thumbnail mode
+          key={wordData.id}
         >
           <source src={wordData.value} type="video/mp4" />
         </video>
@@ -50,12 +51,7 @@ function ImageSlider() {
       
       <div className='w-9/12 flex m-auto justify-between'>
         {imgs2.map((data, i) => (
-          <div
-            className="thumbnail"
-            key={i}
-            onClick={() => handleThumbnailClick(i)}
-            style={{ cursor: 'pointer' }}
-          >
+          <div className="thumbnail" key={i} onClick={() => handleThumbnailClick(i)}>
             {wordData.id === i ? (
               <div className="thumbnail-selected">
                 <Image

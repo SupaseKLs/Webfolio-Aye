@@ -85,16 +85,16 @@ const OurWorkPage = () => {
     : cards.filter(card => card.category === activeFilter);
 
   return (
-    <div className='w-screen h-full'>
-      <div className="flex relative justify-center items-center overflow-hidden">
-        <div className='sm:h-20 w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'>
-      <Image className="absolute top-0  w-screen h-fit" src={OurWork} alt="Our Work" />
+    <div className='w-full h-full'>
+      <div className="flex relative justify-around items-center overflow-hidden">
+        <div className='sm:h-fit w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'>
+      <Image className="absolute top-0 w-full h-fit" src={OurWork} alt="Our Work" />
 
         </div>
         
       </div>
-      <div className="w-full overflow-x-auto max-w-7xl m-auto sm:px-8 px-16">
-        <ul className="overflow-x-scroll mt-6 flex flex-wrap gap-y-2 gap-x-2">
+      <div className="w-full max-w-7xl m-auto sm:px-8 px-16">
+        <ul className="mt-6 flex"> 
           {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
             <li key={category}>
               <p
