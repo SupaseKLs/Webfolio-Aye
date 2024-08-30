@@ -39,7 +39,7 @@ const OurWorkPage = () => {
     gsap.fromTo(
       '.slide-box',
       { 
-        x: '-50', 
+        x: '0%', 
         backgroundColor: '#fff', 
         width: '0%',
       },
@@ -85,10 +85,13 @@ const OurWorkPage = () => {
     : cards.filter(card => card.category === activeFilter);
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-screen h-full'>
       <div className="flex relative justify-center items-center overflow-hidden">
-        <div className='sssssm:h-20 w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'></div>
-        <Image className="absolute top-0 object-cover w-full h-fit" src={OurWork} alt="Our Work" />
+        <div className='sm:h-20 w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'>
+      <Image className="absolute top-0  w-screen h-fit" src={OurWork} alt="Our Work" />
+
+        </div>
+        
       </div>
       <div className="w-full overflow-x-auto max-w-7xl m-auto sm:px-8 px-16">
         <ul className="overflow-x-scroll mt-6 flex flex-wrap gap-y-2 gap-x-2">

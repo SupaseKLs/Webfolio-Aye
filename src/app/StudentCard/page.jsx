@@ -19,10 +19,6 @@ const videos = [
 const Page = () => {
     const [videoSrc, setVideoSrc] = useState(videos[0].src);
 
-    const handleImageClick = (src) => {
-        console.log("Video source clicked:", src); 
-        setVideoSrc(src);
-    };
     videos.forEach(video => {
         console.log(`Type of src for ${video.src}:`, typeof video.src);
     });
