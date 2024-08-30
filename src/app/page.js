@@ -62,8 +62,6 @@ export default function Home() {
           <Image
             src={PolygonBlur} className="absolute bottom-0 left-0" />
 
-       
-
         <Image
           className="sm:w-[250px] h-full w-fit absolute top-0 right-0 z-10"
           width={326}

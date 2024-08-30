@@ -85,7 +85,7 @@ const Index = () => {
                 </div>
             </div>
 
-            <ul className={`menu-items text-[#FFF7F6] fixed top-0 z-30 pt-44 w-full min-h-screen bg-[#189AAA] ${isMenuOpen ? '' : 'hidden'}`}>
+            <ul className={`menu-items text-[#FFF7F6] fixed top-0 z-30 pt-44 w-full min-h-dvh bg-[#189AAA] ${isMenuOpen ? '' : 'hidden'}`}>
                 {navItems.map((item, index) => (
                     <li key={index} className="text-2xl w-9/12 m-auto flex py-4 border-b-2 items-center">
                         <Link href={item.link}>
