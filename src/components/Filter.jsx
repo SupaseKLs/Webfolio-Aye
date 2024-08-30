@@ -94,7 +94,7 @@ const OurWorkPage = () => {
         
       </div>
       <div className="w-full max-w-7xl m-auto sm:px-8 px-16">
-        <ul className="mt-6 flex"> 
+        <ul className="overflow-x-auto mt-6 flex"> 
           {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
             <li key={category}>
               <p
