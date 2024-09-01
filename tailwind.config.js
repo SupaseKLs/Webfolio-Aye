@@ -11,6 +11,7 @@ module.exports = {
         'nav-color': '#FFF7F6',
         'nav-font': '#3B2820',
         'primary-color': '#189AAA',
+        'secondary-color': '#FFF7F6', // replace with actual color
         'content-color': '#FAECDF',
         'gray-color': '#AFACAA',
         'orange-color': '#FF4A00',
