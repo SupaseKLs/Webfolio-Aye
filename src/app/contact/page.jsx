@@ -15,20 +15,7 @@ import Share from '@/assets/share.svg';
 import ScrollDown from '@/components/ScrollDown/index'
 
 export default function Home() {
-  // const cards = [
-  //   "/p1.png",
-  //   "/p2.png",
-  //   "/p3.png",
-  //   "/p4.png",
-  //   "/p5.png",
-  //   "/p6.png",
-  //   "/p7.png",
-  //   "/p8.png",
-  //   "/p9.png",
-  //   "/p10.png",
-  //   "/p12.png",
-  //   "/skill.gif",
-  // ];
+  
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -37,7 +24,6 @@ export default function Home() {
       <div className="bg-primary-color h-screen">
         <div className="relative max-w-7xl m-auto">
           <div className="flex justify-center pt-8">
-            {/* Uncomment the Navbar if needed */}
             <Navbar />
           </div>
           <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
@@ -57,10 +43,8 @@ export default function Home() {
         </div>
         </div>
 
-       
-
         <Image
-          className="sm:w-[250px] h-full h-fit w-fit absolute top-0 right-0 z-10"
+          className="sm:w-[250px] h-fit w-fit absolute top-0 right-0 z-10"
           width={326}
           src={Mascot}
           alt="Mascot"

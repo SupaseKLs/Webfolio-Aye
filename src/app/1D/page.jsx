@@ -95,14 +95,14 @@ const page = () => {
                 </div>
             </div>
             <div className='xl:px-4'>
-            <div className='max-w-7xl m-auto'>
+                <div className='max-w-7xl m-auto'>
                     <div className="pb-20">
                         <p className='py-12'>Let’s say that 2 of my users are primary target of my products, so I built <span className='text-primary-color'>empathy map</span> in order to understand their expectation,<br /> demand, feelings of the users. Then I will apply all the information to my products.</p>
                         <Image className='w-screen' src={Empathy} />
                     </div>
                 </div>
             </div>
-                
+
 
 
             <div>

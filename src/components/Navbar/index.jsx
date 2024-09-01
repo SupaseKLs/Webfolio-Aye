@@ -54,7 +54,6 @@ const Index = () => {
         <nav className={styles.navbar}>
             <div className={styles.navbar_container}>
                 <div className={styles.navbar_menu}>
-                    {/* Toggle Menu */}
                     <div className="xl-min:hidden">
                         <button
                             id="menu-toggle"
@@ -97,15 +96,15 @@ const Index = () => {
                 <div className='w-9/12 m-auto'>
                     <p className='font-bold pt-20 uppercase'>Socials</p>
                     <div className='flex py-10 justify-around'>
-                        <Image src={Behance} />
-                        <Image src={Linkedin} />
+                        <Link href="https://www.behance.net/chanikalaobuds"><Image src={Behance} /></Link>
+                        <Link href="https://www.linkedin.com/in/chanikarn-laobudsa-66319b227/"><Image src={Linkedin} /></Link>
                         <Image src={Google} />
                     </div>
                     <div className='flex justify-center mt-12'>
-                    <div className="flex w-fit bg-content-color rounded-full border-[#AFACAA] border-4 px-12 py-2">
-                        <Link className="uppercase text-[#AFACAA] text-xl underline" href="">Resume</Link>
-                        <Image src={Share} className="w-6 ml-4" />
-                    </div>
+                        <div className="flex w-fit bg-content-color rounded-full border-[#AFACAA] border-4 px-12 py-2">
+                            <Link className="uppercase text-[#AFACAA] text-xl underline" href="">Resume</Link>
+                            <Image src={Share} className="w-6 ml-4" />
+                        </div>
                     </div>
 
                 </div>

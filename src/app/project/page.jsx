@@ -60,7 +60,6 @@ const OurWorkPage = () => {
   return (
     <div className="relative">
           <div className="flex justify-center pt-8">
-            {/* Uncomment the Navbar if needed */}
             <Navbar />
           </div>
           <div className='w-full h-full'>

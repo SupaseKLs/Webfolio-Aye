@@ -6,21 +6,22 @@ import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import OurWork from '../assets/OurWork.svg';
+import BoxReveal from "@/components/BoxReveal/BoxReveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const cards = [
-  { src: '/p4.png', category: 'Graphic', linksrc: '/FOUNDATION' },
-  { src: '/p5.png', category: 'Character', linksrc: '/Beary' },
-  { src: '/p6.png', category: 'UX/UI', linksrc: '/1D' },
-  { src: '/p7.png', category: 'UX/UI', linksrc: '/StudentCard' },
-  { src: '/p8.png', category: 'UX/UI', linksrc: '/Time_Attendance' },
-  { src: '/p9.png', category: 'UX/UI', linksrc: '/Okontek' },
-  { src: '/p10.png', category: 'Character', linksrc: '/Chujai' },
-  { src: '/p2.png', category: 'Graphic', linksrc: '/Encyclopedia' },
-  { src: '/p3.png', category: 'Graphic', linksrc: '/Rebrand_Siam_Wellness' },
-  { src: '/p1.png', category: 'Product', linksrc: '/BOZ' },
-  { src: '/p12.png', category: 'Product', linksrc: '/Alamus' },
+  { src: '/p4.png',width: '350', height: '200', category: 'Graphic', linksrc: '/FOUNDATION', header: 'Love Foundation', content: 'Graphic Design' },
+  { src: '/p5.png',width: '350', height: '200', category: 'Character', linksrc: '/Beary', header: 'Beary - Art Toy', content: 'Character Design' },
+  { src: '/p6.png',width: '350', height: '200', category: 'UX/UI', linksrc: '/1D', header: '1D - Event gathering application', content: 'UX/UI Design' },
+  { src: '/p7.png',width: '350', height: '200', category: 'UX/UI', linksrc: '/StudentCard', header: 'Digital Student Card', content: 'UX/UI Design' },
+  { src: '/p8.png',width: '350', height: '200', category: 'UX/UI', linksrc: '/Time_Attendance', header: 'Dashboard & time table', content: 'UX/UI Design' },
+  { src: '/p9.png',width: '350', height: '200', category: 'UX/UI', linksrc: '/Okontek', header: 'Layout Design', content: 'UI Design' },
+  { src: '/p10.png',width: '350', height: '200', category: 'Character', linksrc: '/Chujai', header: 'Chujai (ชูใจ)', content: 'Character Design' },
+  { src: '/p2.png',width: '350', height: '200', category: 'Graphic', linksrc: '/Encyclopedia', header: 'Thai Encyclopedia for youth Project', content: 'Graphic Design' },
+  { src: '/p3.png',width: '350', height: '200', category: 'Graphic', linksrc: '/Rebrand_Siam_Wellness', header: 'Rebrand - Siam Wellness', content: 'Graphic Design' },
+  { src: '/p1.png',width: '350', height: '200', category: 'Product', linksrc: '/BOZ', header: 'BOZ - Tape Dispensor', content: 'Graphic Design' },
+  { src: '/p12.png',width: '350', height: '200', category: 'Product', linksrc: '/Alamus', header: 'Alamus - Product from mussel [Thesis]', content: 'Product Design' },
 ];
 
 const OurWorkPage = () => {
@@ -28,35 +29,6 @@ const OurWorkPage = () => {
 
   useEffect(() => {
     AOS.init();
-
-    gsap.to('.stop-slide', {
-      x: '100%', 
-      width: '100%',
-      duration: 1,
-      ease: 'power2.out'
-    });
-
-    gsap.fromTo(
-      '.slide-box',
-      { 
-        x: '0%', 
-        backgroundColor: '#fff', 
-        width: '0%',
-      },
-      {
-        x: '0%', 
-        backgroundColor: '#AFACAA', 
-        width: '100%',
-        scrollTrigger: {
-          trigger: '.slide-box',
-          start: 'top 100%',
-          end: 'bottom top',
-          scrub: true,
-        },
-        duration: 1, 
-      }
-    ),
-    
 
     gsap.utils.toArray('.animate-on-scroll').forEach((element) => {
       gsap.fromTo(
@@ -87,39 +59,45 @@ const OurWorkPage = () => {
   return (
     <div className='w-full h-full'>
       <div className="flex justify-around items-center overflow-hidden">
-        <div className='relative sm:h-fit w-screen xl:h-24 xl-min:h-44 stop-slide slide-box'>
-      <Image className=" top-0 w-full h-full" src={OurWork} alt="Our Work" />
-
-        </div>
-        
+        <BoxReveal boxColor={"#AFACAA"} duration={1}>
+          <Image className="bg-gray-color w-screen top-0 h-full" src={OurWork} alt="Our Work" />
+        </BoxReveal>
       </div>
-      <div className="w-full max-w-7xl m-auto sm:px-8 px-16">
-        <ul className="overflow-x-auto mt-6 flex"> 
-          {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
-            <li key={category}>
-              <p
-                className={`mx-2 px-4 py-2 rounded-full cursor-pointer ${activeFilter === category ? 'bg-primary-color text-content-color' : 'border-2 text-primary-color border-primary-color'}`}
-                onClick={() => handleFilterChange(category)}
-              >
-                {category}
-              </p>
-            </li>
-          ))}
-        </ul>
+      <div className="w-full max-w-7xl m-auto sm:px-8 sm:py-20 py-32 px-16">
+        <div className="relative overflow-hidden">
+          <ul
+            className="mt-6 flex cursor-grab overflow-x-auto whitespace-nowrap scrollbar-hidden"
+          >
+            {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
+              <li key={category} className="inline-block">
+                <p
+                  className={`mx-2 px-4 py-2 rounded-full cursor-pointer ${activeFilter === category ? 'bg-primary-color text-content-color' : 'border-2 text-primary-color border-primary-color'}`}
+                  onClick={() => handleFilterChange(category)}
+                >
+                  {category}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="flex justify-between items-center flex-wrap pb-20">
           {filteredCards.map((card, index) => (
-            <div key={index} className="mx-auto mt-10 relative animate-on-scroll">
-              <div className="overflow-hidden rounded-md">
-                <Link href={card.linksrc}>
-                    <Image
-                      className="transition-transform duration-300 transform hover:scale-110"
-                      src={card.src}
-                      width={350}
-                      height={200}
-                      alt={`Image ${index + 1}`}
-                    />
-                </Link>
+            <div key={index} className="relative mx-auto mt-10 overflow-hidden rounded-md group">
+              <Link href={card.linksrc}>
+                <Image
+                  className="transition-transform duration-300 transform group-hover:scale-110"
+                  src={card.src}
+                  width={card.width}
+                  height={card.height}
+                  alt={`Image ${index + 1}`}
+                />
+              </Link>
+              <div className="absolute bottom-0 left-0 right-0 h-full group-hover:bg-black/10 text-white transform transition-opacity duration-300 animate-fadeUp">
+                <div className='transform transition-opacity duration-300 group-hover:opacity-100 opacity-0 pt-32 pl-3'>
+                  <h1 className='font-bold'>{card.header}</h1>
+                  <p className='pt-1'>{card.content}</p>
+                </div>
               </div>
             </div>
           ))}
