@@ -33,9 +33,9 @@ export default function Home() {
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
           <div className="fixed bottom-0 h-full w-full">
-            <div className="mt-44  h-full">
+            <div className="mt-44 h-full">
               <div className="relative max-w-7xl m-auto">
-                <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
+                <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-full">
                   <div className="relative text-content-color">
                     <p className="xl:hidden absolute left-8 top-[-25px] xl-min:text-xl text-3xl">
                       2024
@@ -74,18 +74,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex h-full justify-center items-center px-4">
+        <div className="relative flex justify-center items-center py-10 px-4">
           <Image className="absolute top-0 right-0" src={PolygonBlur2} />
           <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
-          <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex xl:items-center max-w-5xl m-auto">
-            <Image className=" xl:hidden pt-8" src={Line2} />
+          <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex max-w-5xl m-auto">
+            <Image className="xl:hidden" src={Line2} />
             <div className="pl-4">
               <div className="sm:w-[370px] w-[440px]">
                 <TypingAnimation
-                  className="absolute font-normal top-0 sm:text-xl text-primary-color text-2xl"
+                  className="absolute font-normal top-0 text-primary-color sm:text-3xl text-4xl"
                   text="Hello"
                 />
-                <p className="sm:text-sm indent-8 pt-20">
+                <p className="sm:text-sm indent-8 pt-16">
                   I am Aye, graduate in product design program. Majority of my
                   experience are include product design, graphic design and
                   UXUI. All of the project are based on art and design knowledge
@@ -114,7 +114,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center xl:py-10">
-              <Image className="sm:w-full w-[500px]" src={Toy}></Image>
+              <Image className="min-h-min w-[500px]" src={Toy}></Image>
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ const OurWorkPage = () => {
     : cards.filter(card => card.category === activeFilter);
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-fit'>
       <div className="flex justify-around items-center overflow-hidden">
         <BoxReveal boxColor={"#AFACAA"} duration={1}>
           <Image className="bg-gray-color w-screen top-0 h-full" src={OurWork} alt="Our Work" />
