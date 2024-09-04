@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative xl:pt-8 sm:h-full flex h-full justify-center items-center px-4 py-32">
+        <div className="relative xl:pt-8 sm:h-full flex h-full justify-center items-center px-4 py-8">
           <Image className="absolute top-0 right-0" src={PolygonBlur2} />
           <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
           <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex xl:items-center max-w-5xl m-auto">
@@ -118,7 +118,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="">
         <Filter />
         </div>
         <div>
