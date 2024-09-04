@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-primary-color relative h-screen">
-        <div className="z-40  w-full top-0 fixed flex justify-center pt-8">
+        <div className="z-40 w-full top-0 fixed flex justify-center pt-8">
           <Navbar />
         </div>
         <div
@@ -33,7 +33,7 @@ export default function Home() {
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
           <div className="fixed bottom-0 h-screen w-full">
-            <div className="mt-52 h-screen">
+            <div className="mt-44 h-screen">
               <div className="relative max-w-7xl m-auto">
                 <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
                   <div className="relative text-content-color">
@@ -118,13 +118,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div>
         <Filter />
         </div>
-        <div>
         <Footer />
-
-        </div>
       </div>
     </>
   );
