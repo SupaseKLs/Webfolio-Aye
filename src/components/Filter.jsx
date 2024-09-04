@@ -81,10 +81,10 @@ const OurWorkPage = () => {
           </ul>
         </div>
 
-        <div className="flex justify-flex items-end flex-wrap pb-20">
+        <div className="flex justify-flex items-end flex-wrap pb-20 pt-4">
           {filteredCards.map((card, index) => (
-            <div key={index} className="relative mt-10 mx-4 xl:mx-auto overflow-hidden rounded-md group">
-              <Link href={card.linksrc}>
+            <div key={index} className="relative mt-10 xl:m-auto mx-3 overflow-hidden rounded-md pb-2 group">
+              <Link className='z-30' href={card.linksrc}>
                 <Image
                   className="transition-transform duration-300 transform group-hover:scale-110"
                   src={card.src}
@@ -92,13 +92,13 @@ const OurWorkPage = () => {
                   height={card.height}
                   alt={`Image ${index + 1}`}
                 />
-              </Link>
-              <div className="absolute bottom-0 left-0 right-0 h-full group-hover:bg-black/10 text-white transform transition-opacity duration-300 animate-fadeUp">
+              <div className="z-0 absolute bottom-0 left-0 right-0 h-full group-hover:bg-black/10 text-white transform transition-opacity duration-300 animate-fadeUp">
                 <div className='transform transition-opacity duration-300 group-hover:opacity-100 opacity-0 pt-32 pl-3'>
                   <h1 className='font-bold'>{card.header}</h1>
                   <p className='pt-1'>{card.content}</p>
                 </div>
               </div>
+              </Link>
             </div>
           ))}
         </div>

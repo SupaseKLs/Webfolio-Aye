@@ -19,7 +19,7 @@ const page = () => {
                 </div>
 
                 <div className="xl:flex-col flex sm:p-5 xl:justify-center mt-20 pb-10">
-                    <div className='xl:w-fit m-auto px-2 w-screen flex flex-col xl:items-center'>
+                    <div className='xl:w-fit m-auto px-2 w-s[705px] h[1990px] flex flex-col xl:items-center'>
                         <div>
                             <Image src={img1} />
                         </div>
@@ -41,7 +41,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='w-10/12 xl:mx-auto mx-12'>
                         <div className='py-6'>
                             <h1 className='text-4xl text-primary-color'>LOVE FOUNDATION</h1>
                             <h3 className='py-4 text-2xl'>Graphic design</h3>

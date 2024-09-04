@@ -29,11 +29,11 @@ export default function Home() {
           <Navbar />
         </div>
         <div
-          className="relative h-screen"
+          className="relative h-full"
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-          <div className="fixed bottom-0 h-screen w-full">
-            <div className="mt-44 h-screen">
+          <div className="fixed bottom-0 h-full w-full">
+            <div className="mt-44  h-full">
               <div className="relative max-w-7xl m-auto">
                 <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-screen">
                   <div className="relative text-content-color">
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative xl:pt-8 sm:h-full flex h-full justify-center items-center px-4 py-8">
+        <div className="relative flex h-full justify-center items-center px-4">
           <Image className="absolute top-0 right-0" src={PolygonBlur2} />
           <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
           <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex xl:items-center max-w-5xl m-auto">
