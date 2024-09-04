@@ -81,9 +81,9 @@ const OurWorkPage = () => {
           </ul>
         </div>
 
-        <div className="flex justify-between items-center flex-wrap pb-20">
+        <div className="flex justify-flex items-end flex-wrap pb-20">
           {filteredCards.map((card, index) => (
-            <div key={index} className="relative mx-auto mt-10 overflow-hidden rounded-md group">
+            <div key={index} className="relative mt-10 mx-4 overflow-hidden rounded-md group">
               <Link href={card.linksrc}>
                 <Image
                   className="transition-transform duration-300 transform group-hover:scale-110"

@@ -75,7 +75,7 @@ const Index = () => {
                         </button>
                     </div>
 
-                    <ul className='xl:hidden flex justify-center items-center shadow-lg bg-nav-color opacity-80 rounded-full w-[730px] h-12 uppercase'>
+                    <ul className='xl:hidden z-50 flex justify-center items-center shadow-lg bg-nav-color opacity-80 rounded-full w-[730px] h-12 uppercase'>
                         <li><Link scroll={false} className='hover:text-primary-color transition-transform duration-300  text-nav-font px-20' href="/">Home</Link></li>
                         <li><Link scroll={false} className='hover:text-primary-color transition-transform duration-300  text-nav-font pr-20' href="/project">Projects</Link></li>
                         <li><Link scroll={false} className='hover:text-primary-color transition-transform duration-300  text-nav-font pr-20' href="/about">About me</Link></li>
