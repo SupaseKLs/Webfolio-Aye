@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import Navbar from "../components/Navbar/index";
 import Mascot from "../assets/img/mascot.png";
-import Portfolio from "../assets/Portfolio.svg";
+import Portfolio from "../assets/img/port2.png";
 import Line from "../assets/Line.svg";
 import Line2 from "../assets/Line2.svg";
 import PolygonBlur from "../assets/PolygonBlur.svg";
@@ -24,40 +24,23 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-primary-color relative h-screen">
+      <div className="bg-primary-color h-screen">
         <div className="z-40 w-full top-0 fixed flex justify-center pt-8">
           <Navbar />
         </div>
         <div
-          className="relative h-full"
+          className="relative flex h-full"
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
           <div className="fixed bottom-0 h-full w-full">
-            <div className="mt-44 h-full">
-              <div className="relative max-w-7xl m-auto">
-                <div className="sm:mt-40 xl-min:mt-12 flex max-w-5xl mt-20 m-auto h-full">
-                  <div className="relative text-content-color">
-                    <p className="xl:hidden absolute left-8 top-[-25px] xl-min:text-xl text-3xl">
-                      2024
-                    </p>
+            <div className="3xl:mt-10 h-full">
+              <div className="h-screen w-screen relative max-m-auto">
+                <div className="flex max-w-5xl items-center justify-start m-auto h-full">
+                  <div className="flex justify-center items-center">
                     <Image
-                      className="xl-min:max-h-80 xl:ml-40 xl:hidden relative"
-                      src={Line}
-                    />
-                  </div>
-                  <div className="text-content-color">
-                    <Image
-                      className="xl-min:pt-24 xl-min:max-w-96 sm:w-72 xl:w-96 pt-44 pl-8"
+                      className="3xl:h-[800px] pl-4"
                       src={Portfolio}
                     />
-                    <div className="sm:mt-0 flex flex-col mt-6">
-                      <p className="sm:w-9 sm:h-9 sm:text-sm sm:ml-56 uppercase ml-80 w-12 h-12 flex justify-center items-center bg-content-color rounded-full text-primary-color">
-                        Aye
-                      </p>
-                      <p className="sm:text-xl xl-min:text-xl pl-8 text-3xl">
-                        Chanikarn Laobudsa
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
