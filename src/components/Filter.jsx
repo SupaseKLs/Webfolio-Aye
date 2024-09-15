@@ -63,10 +63,10 @@ const OurWorkPage = () => {
           <Image className="bg-gray-color w-screen top-0 h-full" src={OurWork} alt="Our Work" />
         </BoxReveal>
       </div>
-      <div className="w-full max-w-7xl m-auto sm:px-8 sm:py-20 py-32 px-16">
+      <div className="w-full max-w-7xl m-auto px-16">
         <div className="relative overflow-hidden">
           <ul
-            className="mt-6 flex cursor-grab overflow-x-auto whitespace-nowrap scrollbar-hidden"
+            className="mt-24 mb-12 flex cursor-grab overflow-x-auto whitespace-nowrap scrollbar-hidden"
           >
             {['All', 'UX/UI', 'Graphic', 'Character', 'Product'].map(category => (
               <li key={category} className="inline-block">
@@ -81,9 +81,9 @@ const OurWorkPage = () => {
           </ul>
         </div>
 
-        <div className="flex justify-flex items-end flex-wrap pb-20 pt-4">
+        <div className="flex justify-flex items-end flex-wrap pb-20">
           {filteredCards.map((card, index) => (
-            <div key={index} className="relative mt-10 xl:m-auto mx-3 overflow-hidden rounded-md pb-2 group">
+            <div key={index} className="relative xl:m-auto mx-3 overflow-hidden rounded-md pb-2 group">
               <Link className='z-30' href={card.linksrc}>
                 <Image
                   className="transition-transform duration-300 transform group-hover:scale-110"

@@ -6,11 +6,10 @@ import Image from "next/image";
 import Navbar from "../components/Navbar/index";
 import Mascot from "../assets/img/mascot.png";
 import Portfolio from "../assets/img/port2.png";
-import Line from "../assets/Line.svg";
+// import Line from "../assets/Line.svg";
 import Line2 from "../assets/Line2.svg";
 import PolygonBlur from "../assets/PolygonBlur.svg";
 import PolygonBlur2 from "../assets/PolygonBlur2.svg";
-import PolygonBlur3 from "../assets/PolygonBlur3.svg";
 import Toy from "../assets/img/gifx1.gif";
 import Filter from "../components/Filter";
 import ScrollDown from "../components/ScrollDown/index";
@@ -25,7 +24,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-primary-color h-screen">
-        <div className="z-40 w-full top-0 fixed flex justify-center pt-8">
+        <div className="z-40 w-full top-0 fixed flex justify-center pt-2">
           <Navbar />
         </div>
         <div
@@ -38,7 +37,7 @@ export default function Home() {
                 <div className="flex max-w-5xl items-center justify-start m-auto h-full">
                   <div className="flex justify-center items-center">
                     <Image
-                      className="3xl:h-[800px] pl-4"
+                      className="3xl:max-w-fit sm:pt-40 max-w-96 xl-min:w-fit pl-4"
                       src={Portfolio}
                     />
                   </div>
@@ -57,18 +56,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center py-10 px-4">
+        <div className="relative flex justify-center items-center py-16 px-4">
           <Image className="absolute top-0 right-0" src={PolygonBlur2} />
-          <Image className="absolute bottom-0 left-0" src={PolygonBlur3} />
           <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex max-w-5xl m-auto">
-            <Image className="xl:hidden" src={Line2} />
+            <Image className="xl:hidden mt-14" src={Line2} />
             <div className="pl-4">
               <div className="sm:w-[370px] w-[440px]">
                 <TypingAnimation
                   className="absolute font-normal top-0 text-primary-color sm:text-3xl text-4xl"
                   text="Hello"
                 />
-                <p className="sm:text-sm indent-8 pt-16">
+                <p className="sm:text-sm indent-8 pt-24">
                   I am Aye, graduate in product design program. Majority of my
                   experience are include product design, graphic design and
                   UXUI. All of the project are based on art and design knowledge
