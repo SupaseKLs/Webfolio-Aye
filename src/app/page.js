@@ -34,10 +34,10 @@ export default function Home() {
           <div className="fixed bottom-0 h-full w-full">
             <div className="3xl:mt-10 h-full">
               <div className="h-screen w-screen relative max-m-auto">
-                <div className="flex max-w-5xl items-center justify-start m-auto h-full">
+                <div className="flex 3xl:max-w-7xl max-w-5xl items-center justify-start m-auto h-full">
                   <div className="flex justify-center items-center">
                     <Image
-                      className="3xl:max-w-fit sm:pt-40 max-w-96 xl-min:w-fit pl-4"
+                      className="3xl:max-w-full sm:pt-40 sm:max-w-80 max-w-96 xl:max-w-fit xl-min:w-[700px] pl-4"
                       src={Portfolio}
                     />
                   </div>
