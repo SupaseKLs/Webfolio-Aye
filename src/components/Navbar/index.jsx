@@ -17,17 +17,6 @@ const Index = () => {
     };
 
     useEffect(() => {
-        gsap.from('.navbar', {
-            duration: 1.5,
-            y: 50,
-            opacity: 1,
-            delay: 0.5,
-            stagger: 0.2,
-            ease: 'power4.out'
-        });
-    }, []);
-
-    useEffect(() => {
         if (isMenuOpen) {
             gsap.to('.menu-items', {
                 x: 0,

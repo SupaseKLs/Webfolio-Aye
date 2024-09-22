@@ -40,6 +40,7 @@ module.exports = {
       'custom-gradient': 'linear-gradient(180deg, #3B2820, #370014)',
 
     },
+   
 
     screens: {
       '3xl': { 'min': '1535px' },
@@ -57,5 +58,7 @@ module.exports = {
       'sm': { 'max': '575px' },
     }
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 };

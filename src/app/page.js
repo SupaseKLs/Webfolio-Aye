@@ -1,12 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Navbar from "../components/Navbar/index";
 import Mascot from "../assets/img/mascot.png";
 import Portfolio from "../assets/img/port2.png";
-// import Line from "../assets/Line.svg";
 import Line2 from "../assets/Line2.svg";
 import PolygonBlur from "../assets/PolygonBlur.svg";
 import PolygonBlur2 from "../assets/PolygonBlur2.svg";
@@ -38,12 +37,13 @@ export default function Home() {
                   <div className="flex justify-center items-center">
                     <Image
                       className="3xl:max-w-full sm:pt-40 sm:max-w-80 max-w-96 xl:max-w-fit xl-min:w-[700px] pl-4"
-                      src={Portfolio}
+                     alt="Portfolio" 
+                      src={Portfolio} 
                     />
                   </div>
                 </div>
               </div>
-              <Image src={PolygonBlur} className="absolute bottom-0 left-0" />
+              <Image src={PolygonBlur} alt="Polygon" className="absolute bottom-0 left-0" />
 
               <Image
                 className="sm:w-[250px] h-full w-fit absolute top-0 right-0 z-10"
@@ -57,9 +57,9 @@ export default function Home() {
         </div>
 
         <div className="relative flex justify-center items-center py-16 px-4">
-          <Image className="absolute top-0 right-0" src={PolygonBlur2} />
+          <Image className="absolute top-0 right-0" alt="Polygon" src={PolygonBlur2} />
           <div className="relative xl:flex-col md-min:flex-row 2xl:flex-row flex max-w-5xl m-auto">
-            <Image className="xl:hidden mt-14" src={Line2} />
+            <Image className="xl:hidden mt-14" alt="Line" src={Line2} />
             <div className="pl-4">
               <div className="sm:w-[370px] w-[440px]">
                 <TypingAnimation
@@ -95,7 +95,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center xl:py-10">
-              <Image className="min-h-min w-[500px]" src={Toy}></Image>
+              <Image className="min-h-min w-[500px]" alt="Toy" src={Toy}></Image>
             </div>
           </div>
         </div>
